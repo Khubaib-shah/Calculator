@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Iphone Calculator</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>iPhone Calculator</h1>
+      <div class="iphoneBody">
+        <div class="iphoneHeader">
+          <p class="time">4:42 AM</p>
+          <p class="icon"><i class="fa fa-signal"></i></p>
+          <p class="icon"><i class="fa fa-wifi"></i></p>
+          <p class="icon"><i class="fa fa-battery"></i></p>
+        </div>
+        <input type="text" value="0" class="inputCenter" id="display" disabled>
+        <table class="center">
+          <tr>
+            <td class="buttons Color1" onclick="clearDisplay()">AC</td>
+            <td class="buttons Color1" onclick="changeSign()">+/-</td>
+            <td class="buttons Color1" onclick="percent()">%</td>
+            <td class="buttons Color2" onclick="appendOperator('/')">÷</td>
+          </tr>
+          <tr>
+            <td class="buttons" onclick="appendNumber(7)">7</td>
+            <td class="buttons" onclick="appendNumber(8)">8</td>
+            <td class="buttons" onclick="appendNumber(9)">9</td>
+            <td class="buttons Color2" onclick="appendOperator('*')">x</td>
+          </tr>
+          <tr>
+            <td class="buttons" onclick="appendNumber(4)">4</td>
+            <td class="buttons" onclick="appendNumber(5)">5</td>
+            <td class="buttons" onclick="appendNumber(6)">6</td>
+            <td class="buttons Color2" onclick="appendOperator('-')">-</td>
+          </tr>
+          <tr>
+            <td class="buttons" onclick="appendNumber(1)">1</td>
+            <td class="buttons" onclick="appendNumber(2)">2</td>
+            <td class="buttons" onclick="appendNumber(3)">3</td>
+            <td class="buttons Color2" onclick="appendOperator('+')">+</td>
+          </tr>
+          <tr>
+            <td class="buttons" onclick="appendNumber(0)">0</td>
+            <td></td>
+            <td class="buttons" onclick="appendDecimal()">.</td>
+            <td class="buttons Color2" onclick="calculate()">=</td>
+          </tr>
+        </table>
+        <p class="line"></p>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

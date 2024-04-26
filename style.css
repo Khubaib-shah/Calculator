@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: block;
+  width: 600px;
+  margin: 10px auto;
+}
+.container h1 {
+  text-align: center;
+}
+.inputCenter {
+  display: block;
+  padding: 5px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  background: none;
+  width: 100%;
+  padding-top: 30px;
+  border: none;
+  color: white;
+  font-size: 60px;
+  list-style: none;
+  background-attachment: none;
+}
+input:focus {
+  outline: none;
+}
+.center {
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+}
+.iphoneBody {
+  background: black;
+  width: 260px;
+  height: 500px;
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.iphoneHeader {
+  display: flex;
+  align-items: end;
+}
+.time {
+  flex: 1;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 5px;
+  color: aliceblue;
+}
+.icon {
+  margin-right: 15px;
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+}
+.buttons {
+  background: #333333;
+  border-radius: 50%;
+  text-align: center;
+  padding: 18px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.Color1 {
+  color: black;
+  background: #a5a5a5;
+}
+
+.Color2 {
+  color: white;
+  background: #ff9f0a;
+}
+.line {
+  margin:10px  0px  0px 60px;
+  border-top: 3px solid white;
+  width: 50%;
+  border-radius: 25%;
+}
+
+@media screen and (max-width:425px){
+  .container{width: 100%;}
+  
+}
